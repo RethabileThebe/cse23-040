@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        #slides {
+
+            height: auto;
+            width: 100%;
+
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="warnerbrothers.css">
+    <title>TV Shows</title>
+
+</head>
+
+<header>
+
+    <div class="topnav">
+        <a href="warnerbros.html">
+            <img src="logo3.jpg" alt="The warnerbros logo" width="80px">
+        </a>
+        <a class="active" href="warnerbros.html" style="color: black;">Home</a>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Movies.html" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Movies
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Romance Movies.html">Romance</a></li>
+                <li><a class="dropdown-item" href="Action Movies.html">Action</a></li>
+                <li><a class="dropdown-item" href="Horror Movies.html">Horror</a></li>
+            </ul>
+            <a class="nav-link dropdown-toggle" href="TV Shows.html" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                TV Shows
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Animation.html">Animation</a></li>
+                <li><a class="dropdown-item" href="Drama TV Shows.html">Drama</a></li>
+                <li><a class="dropdown-item" href="TV Shows Sitcom.html">Sitcom</a></li>
+                <li><a class="dropdown-item" href="TV Shows Game Shows.html">Game Shows</a></li>
+                <li><a class="dropdown-item" href="Soapies TV Shows.html">Soapies</a></li>
+            </ul>
+            <a href="Games & Apps.html">Games & Apps</a>
+            <a href="Feedback.html">Feedback</a>
+    </div>
+</header>
+
+<br>
+
+<body>
+    <div id="slides">
+        <div class="mySlides Movies">
+            <div class="numbertext2">
+                <img src="pennyonmars.png" class="carouselsMovies" alt="Penny on Mars" width="80%">
+            </div>
+        </div>
+
+        <div class="mySlides Movies">
+            <div class="numbertext2">
+                <img src="blood.jpg" class="carouselsMovies" alt="Blood and water" width="80%">
+            </div>
+        </div>
+
+        <div class="mySlides Movies">
+            <div class="numbertext2">
+                <img src="marvel.jpg" class="carouselsMovies" alt="Marvel movie" width="80%">
+            </div>
+        </div>
+
+
+        <div class="mySlides Movies">
+            <div class="numbertext2">
+                <img src="nicky.jpg" class="carouselsMovies" alt="Dune movie" width="80%">
+            </div>
+        </div>
+
+        <div class="mySlides Movies">
+            <div class="numbertext2">
+                <img src="casagrandes.jpg" class="carouselsMovies" alt="The joker" width="80%">
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000);
+        }
+    </script>
+
+
+    <br>
+
+
+    <h1>Buckle up and enjoy the ride!!!</h1>
+
+    <div class="row">
+        <div class="row row-col-1 row-cols-md-3 g-4">
+            <div class="d-flex">
+                <div class="card-container">
+                    <div class="card">
+                        <img src="kc.jpeg" alt="KC Undercover-Sitcom">
+                        <div class="card-content">
+                            <h3>KC Undercover-Sitcom</h3>
+                            <p>High-school student K.C. Cooper is a math whiz with a black belt in karate. A normal teen
+                                otherwise, her life changes when her parents,her parents recruit her to be a spy in a
+                                secret government agency known as The Organization.</p>
+                            <a href="https://www.youtube.com/watch?v=C7DV3Ach--w&list=PLARVidk9CuvEKnBFmcMgZN62Q6k251SuW"
+                                class="btn">Watch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="d-flex">
+            <div class="card-container">
+                <div class="card">
+                    <img src="samandcat.jpg" alt="Sam & Cat-Sitcom" width="100%" height="50%">
+                    <div class="card-content">
+                        <h3>Sam and Cat-Sitcom</h3>
+                        <p> Sam Puckett is a street-smart teenager who is a certified master at fighting her way out of
+                            any situation. Cat Valentine is a sweet, caring adolescent who has a knack for getting
+                            herself into sticky situations. When Sam makes her way to Los Angeles, the two meet and
+                            quickly become friends and roommates.</p>
+                        <a href="https://www.youtube.com/watch?v=cN70Cc14oE0&list=PLTjHc6tMisa8VXgzp7L2mS6v9a4c2lEax&index=2"
+                            class="btn">Watch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="d-flex">
+            <div class="card-container">
+                <div class="card">
+                    <img src="livandmad.jpg" alt="Liv and Maddie-Sitcom">
+                    <div class="card-content">
+                        <h3>Liv and Maddie-Sitcom</h3>
+                        <p>Liv and Maddie are identical twins and built-in best friends. They live together when Liv
+                            returns from Hollywood. Although they are identical twins, their hobbies, faves, and
+                            dislikes are different. How will they solve their problems with each other, their family,
+                            and their friends?</p>
+                        <a href="https://www.youtube.com/watch?v=aN8WZ7JDwsE&list=PLpITb1unyN-GTQlvYOdbqi0cJrDPY0jnt"
+                            class="btn">Watch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="d-flex">
+            <div class="card-container">
+                <div class="card">
+                    <img src="austin.jpeg" alt="Austin and Ally-Sitcom">
+                    <div class="card-content">
+                        <h3>Austin and Ally-Sitcom</h3>
+                        <p> Set in Miami, Austin & Ally is about the relationship between two very different musicians:
+                            extroverted and fun-loving singer and instrumentalist Austin Moon, and introverted and
+                            awkward songwriter Ally Dawson, who is also a singer, but has a bad case of stage fright.
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=Fm9Euzdgt2M&list=PLBnQMxcG04bcZBNl_I7FwH3GDWbD7SOGz"
+                            class="btn">Watch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <h1>Animating moments that captivate and inspire.</h1>
+
+        <div class="row">
+            <div class="d-flex">
+                <div class="card-container">
+                    <div class="card">
+                        <img src="mrbean.jpg" alt="Mr Bean-Adventure tv show">
+                        <div class="card-content">
+                            <h3>Mr Bean-Adventure</h3>
+                            <p>Bumbling, childlike Mr. Bean has trouble completing the simplest of day-to-day tasks, but
+                                his perseverance and resourcefulness frequently allow him to find ingenious ways around
+                                problems.</p>
+                            <a href="https://www.youtube.com/watch?v=vg8Z_-CVfNM" class="btn">Watch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="d-flex">
+                <div class="card-container">
+                    <div class="card">
+                        <img src="kim.jpg" alt="Kim Possible-Action">
+                        <div class="card-content">
+                            <h3>Kim Possible-Action/Animation 2024</h3>
+                            <p>Kim is a teenage girl tasked with fighting crime on a regular basis while coping with
+                                everyday issues commonly associated with adolescence.</p>
+                            <a href="https://www.youtube.com/watch?v=CDcIil3BasA&list=PLLhOnau-tupRiU2lBR78wDVYfi2mfC8DT"
+                                class="btn">Watch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="d-flex">
+                <div class="card-container">
+                    <div class="card">
+                        <img src="miraculous.jpg" alt="Miraculous-Animation">
+                        <div class="card-content">
+                            <h3>Miraculous Tales of Ladybug and CatNoir-Action</h3>
+                            <p>The series features two Parisian teenagers, Marinette Dupain-Cheng and Adrien Agreste,
+                                who transform into the superheroes Ladybug and Cat Noir, respectively, to protect the
+                                city from supervillains which are created by the supervillain Hawk Moth </p>
+                            <a href="https://www.youtube.com/watch?v=p1CXi43uD08&list=RDCMUCWjVfZ3VnyUwBEOkuOlaU3g&start_radio=1"
+                                class="btn">Watch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="d-flex">
+                <div class="card-container">
+                    <div class="card">
+                        <img src="sponge.jpg" alt="SpongeBob-Animation">
+                        <div class="card-content">
+                            <h3>Spongebob Squarepants-Comedy/Animated</h3>
+                            <p>A square yellow sponge named SpongeBob SquarePants lives in a pineapple with his pet
+                                snail, Gary, in the city of Bikini Bottom on the floor of the Pacific Ocean. He works as
+                                a fry cook at the Krusty Krab. During his time off, SpongeBob has a knack for attracting
+                                trouble with his starfish best friend, Patrick.</p>
+                            <a href="https://www.youtube.com/watch?v=NdSg9-Qkp7c" class="btn">Watch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <h1>The price is right with some of our best soapies.</h1>
+
+            <div class="row">
+                <div class="d-flex">
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="thequeen.jpg" alt="The queen-Drama">
+                            <div class="card-content">
+                                <h3>The queen-Drama Series</h3>
+                                <p>Harriet Khoza is forced to do the unthinkable when her husband's secret comes to
+                                    light. Set in the contrasting worlds of the affluent rich versus the middle-class.
+                                    The Queen strips bare the insatiable lust for power amongst the rich and the victims
+                                    that find themselves at their mercy.</p>
+                                <a href="https://www.youtube.com/watch?v=OWzY4yOZtFQ&list=PLEIKRMOsL_P6r98urHr7LRq8WGL13SwGp"
+                                    class="btn">Watch</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="d-flex">
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="thethrone.jpg" alt="The Throne-Drama">
+                            <div class="card-content">
+                                <h3>The Throne-Drama Series</h3>
+                                <p>Treachery, deceit and turmoil engulfs the mythical BaTswana kingdom, when mineral
+                                    deposits are discovered on their land. The Throne, a new drama centered on the Kwena
+                                    Royal Family, will uncover a vicious power struggle, as each member desperately
+                                    tries to serve their own interest.</p>
+                                <a href="https://www.youtube.com/watch?v=0RoV1e8KT9M&list=PLEIKRMOsL_P4rZJpkZg2cw-0cGasDVhSC"
+                                    class="btn">Watch</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="d-flex">
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="kingsofjozi.jpg" alt="Kings Of Jozi-Drama">
+                            <div class="card-content">
+                                <h3>Kings Of Jo'burg-Drama Series</h3>
+                                <p>The Masire brothers rule Johannesburg's criminal underworld, but a supernatural
+                                    family curse and a tangled web of betrayal threaten to destroy them.</p>
+                                <a href="https://www.youtube.com/watch?v=JHQSRvAf8kI" class="btn">Watch</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="d-flex">
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="boldandbeauty.jpg" alt="The Bold and The Beautiful-Drama">
+                            <div class="card-content">
+                                <h3>The Bold and The Beautiful-Drama Series</h3>
+                                <p>Set in Los Angeles, it centers around the Forrester family and their fashion house
+                                    business, Forrester Creations. Like many soap operas, B&B looks into the lives of
+                                    wealthy families and how love affairs, scandals, and betrayals affect each of the
+                                    family members and their relationships with each other.</p>
+                                <a href="https://www.youtube.com/watch?v=HKJIXPbuQYI&list=PLStB9N4VLUeIzGyxQ09RC0ddVwaKXvZSL"
+                                    class="btn">Watch</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>
