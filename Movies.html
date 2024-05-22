@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <style>
+    #slides {
+
+      height: auto;
+      align-content: center;
+      width: 100%;
+    }
+
+
+    .topnav {
+      background-color: goldenrod;
+      overflow: visible;
+      width: 50%;
+      height: 20%;
+      margin-right: 30%;
+      margin-left: 30%;
+      align-content: center;
+
+    }
+
+    .topnav a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      text-decoration: underline;
+      color: whitesmoke;
+    }
+
+    #active {
+
+      color: #000;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="warnerbrothers.css">
+  <title>Movies</title>
+
+</head>
+
+<header>
+
+  <div class="topnav">
+    <a href="warnerbros.html">
+      <img src="logo3.jpg" alt="The warnerbros logo" width="80px">
+    </a>
+    <a div="active" href="warnerbros.html">Home</a>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="Movies.html" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Movies
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="Romance Movies.html">Romance</a></li>
+        <li><a class="dropdown-item" href="Action Movies.html">Action</a></li>
+        <li><a class="dropdown-item" href="Horror Movies.html">Horror</a></li>
+      </ul>
+      <a class="nav-link dropdown-toggle" href="TV Shows.html" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        TV Shows
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="Animation.html">Animation</a></li>
+        <li><a class="dropdown-item" href="Drama TV Shows.html">Drama</a></li>
+        <li><a class="dropdown-item" href="TV Shows Sitcom.html">Sitcom</a></li>
+        <li><a class="dropdown-item" href="TV Shows Game Shows.html">Game Shows</a></li>
+        <li><a class="dropdown-item" href="Soapies TV Shows.html">Soapies</a></li>
+      </ul>
+      <a href="Games & Apps.html">Games & Apps</a>
+      <a href="Feedback.html">Feedback</a>
+  </div>
+</header>
+
+<br>
+
+<body>
+
+
+  <div id="slides">
+    <div class="mySlides Movies">
+      <div class="numbertext2">
+        <img src="searching.jpg" class="carouselsMovies" alt="Searching movie" width="80%">
+      </div>
+    </div>
+
+    <div class="mySlides Movies">
+      <div class="numbertext2">
+        <img src="memory.jpg" class="carouselsMovies" alt="The memory movie" width="80%">
+      </div>
+    </div>
+
+    <div class="mySlides Movies">
+      <div class="numbertext2">
+        <img src="marvel.jpg" class="carouselsMovies" alt="Marvel movie" width="80%">
+      </div>
+    </div>
+
+
+    <div class="mySlides Movies">
+      <div class="numbertext2">
+        <img src="dune.jpeg" class="carouselsMovies" alt="Dune movie" width="80%">
+      </div>
+    </div>
+
+    <div class="mySlides Movies">
+      <div class="numbertext2">
+        <img src="thesystem.jpg" class="carouselsMovies" alt="The system movie" width="80%">
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 2000);
+    }
+  </script>
+
+  <br>
+
+
+  <h1>A must see!!</h1>
+
+  <div class="row">
+    <div class="row row-col-1 row-cols-md-3 g-4">
+      <div class="d-flex">
+        <div class="card-container">
+          <div class="card">
+            <img src="up.jpg">
+            <div class="card-content">
+              <h3>Upgraded-Comedy/Romance 2024</h3>
+              <p>When Ana is upgraded to first class on a work trip, she meets handsome Will, who mistakes Ana for her
+                boss, Claire. A white lie then sets off a glamorous chain of events, romance and opportunity, until
+                her fib threatens to surface.</p>
+              <a href="https://www.youtube.com/watch?v=P3_dj7BnHp8" class="btn">Watch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex">
+      <div class="card-container">
+        <div class="card">
+          <img src="bridesmaids.jpg" alt="BridesMaids-Comedy">
+          <div class="card-content">
+            <h3>BridesMaids-Comedy/Romance 2024</h3>
+            <p>Annie is a single woman whose own life is a mess, but when she learns that her lifelong best friend,
+              Lillian , is engaged, she has no choice but to serve as the maid of honor. Though lovelorn and almost
+              penniless, Annie, nevertheless, winds her way through the strange and expensive rituals associated with
+              her job as the bride's go-to gal. Determined to make things perfect, she gamely leads Lillian and the
+              other bridesmaids down the wild road to the wedding.</p>
+            <a href="https://www.youtube.com/watch?v=FNppLrmdyug" class="btn">Watch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex">
+      <div class="card-container">
+        <div class="card">
+          <img src="thundermans.jpg" alt="Thundermans-Comedy">
+          <div class="card-content">
+            <h3>The Thundermans-Comedy 2024</h3>
+            <p>The superpowered family the Thundermans begins a new era of superhero crimefighting, but when one save
+              goes awry, the family is sent back to Hiddenville.</p>
+            <a href="https://www.youtube.com/watch?v=kPUoUsZAnZM" class="btn">Watch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex">
+      <div class="card-container">
+        <div class="card">
+          <img src="pitchperfect.jpg" alt="pitchperfect-Comedy">
+          <div class="card-content">
+            <h3>Pitch Perferct 3-Comedy 2024</h3>
+            <p>After the highs of winning the world championships, the Bellas find themselves split apart and
+              discovering there aren't job prospects for making music with your mouth. But when they get the chance to
+              reunite for an overseas USO tour, this group of awesome nerds will come together to make some music, and
+              some questionable decisions, one last time.Yes there's part 1 and 2....</p>
+            <a href="https://www.youtube.com/watch?v=x-ZVUrQHqm8" class="btn">Watch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <h1>Power through action!!!</h1>
+
+  <div class="row">
+    <div class="d-flex">
+      <div class="card-container">
+        <div class="card">
+          <img src="lights.jpeg" alt="Lights-Action">
+          <div class="card-content">
+            <h3>Lights out-Action/Horror 2024</h3>
+            <p>In the film, when a terrifying force arises from her family's past, a woman must protect her young
+              stepbrother from a spirit that kills its victims in the dark.</p>
+            <a href="https://www.youtube.com/watch?v=pWT9FIMO-HU" class="btn">Watch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="d-flex">
+      <div class="card-container">
+        <div class="card">
+          <img src="sixty.jpeg" alt="Sixty-Action">
+          <div class="card-content">
+            <h3>60 Minutes-Action 2024</h3>
+            <p>Parents need to know that Sixty Minutes is a German action film about an amateur mixed martial arts
+              fighter named Octavio who finds out from his daughter's mother that if he doesn't show up for his
+              daughter's birthday in 60 minutes, she'll sue for full custody. There are many fight scenes and lots of
+              punching…</p>
+            <a href="https://www.youtube.com/watch?v=YhuoPHJPnwU" class="btn">Watch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="d-flex">
+      <div class="card-container">
+        <div class="card">
+          <img src="lift.jpeg" alt="Lift-Action">
+          <div class="card-content">
+            <h3>Lift-Action 2024</h3>
+            <p>Follows a master thief and his Interpol Agent ex-girlfriend who team up to steal $500 million in gold
+              bullion being transported on an A380 passenger flight. The heist begins at 40,000 ft.</p>
+            <a href="https://www.youtube.com/watch?v=m2L-Sa_6MU0" class="btn">Watch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="d-flex">
+      <div class="card-container">
+        <div class="card">
+          <img src="legend.jpg" alt="I am Legend-Horror">
+          <div class="card-content">
+            <h3>I am Legend-Horror/Action 2024</h3>
+            <p>Will Smith, a brilliant scientist, is a survivor of a man-made plague that transforms humans into
+              bloodthirsty mutants.</p>
+            <a href="https://www.youtube.com/watch?v=sFNPNT_4Qww" class="btn">Watch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <h1>Unleash your imagination with our animated creations.</h1>
+
+
+  <div class="row">
+    <div class="d-flex">
+      <div class="card-container">
+        <div class="card">
+          <img src="kung.jpg" alt="Kung Fu Panda-Animation">
+          <div class="card-content">
+            <h3>Kung fu panda 4-Animation 2024</h3>
+            <p>Over the course of the trilogy, we've seen Po (the titular Kung Fu Panda) evolve and become the dragon
+              warrior, while fending off all sorts of villains and learning more about himself in the process. </p>
+            <a href="https://www.youtube.com/watch?v=_inKs4eeHiI" class="btn">Watch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="d-flex">
+      <div class="card-container">
+        <div class="card">
+          <img src="penguins.jpg" alt="Penguins-Animations">
+          <div class="card-content">
+            <h3>Penguins of Madagascar-Animation 2024</h3>
+            <p>Plucky penguins Skipper, Kowalski, Rico and Private the most elite spies ever hatched join forces with
+              a chic undercover organization known as the North Wind. Led by highly trained, handsome and arrogant
+              Agent Classified, this special inter-species task force must stop a many-tentacled villain, Dr. Octavius
+              Brine, from destroying the world.</p>
+            <a href="https://www.youtube.com/watch?v=4jsFpmFWOSs" class="btn">Watch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="d-flex">
+      <div class="card-container">
+        <div class="card">
+          <img src="inside.jpg" alt="Inside out-Animation">
+          <div class="card-content">
+            <h3>Inside out-Animation 2024</h3>
+            <p>Joy, Sadness, Anger, Fear and Disgust have been running a successful operation by all accounts.
+              However, when Anxiety shows up, they aren't sure how to feel.</p>
+            <a href="https://www.youtube.com/watch?v=LEjhY15eCx0" class="btn">Watch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="d-flex">
+      <div class="card-container">
+        <div class="card">
+          <img src="lionking.jpg" alt="lionking-Animation">
+          <div class="card-content">
+            <h3>The Lion King-Animation 2024</h3>
+            <p>The animated feature follows the adventures of the young lion Simba, the heir of his father, Mufasa.
+              Simba's wicked uncle, Scar, plots to usurp Mufasa's throne by luring father and son into a stampede of
+              wildebeests. But Simba escapes, and only Mufasa is killed. Simba returns as an adult (Matthew Broderick)
+              to take back his homeland from Scar with the help of his friends Timon and Pumbaa.</p>
+            <a href="https://www.youtube.com/watch?v=7TavVZMewpY" class="btn">Watch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</body>
+
+
+
+</html>
